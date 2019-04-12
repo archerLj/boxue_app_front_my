@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Boxue
+
+  Created by archerLj on 2019/4/3.
+  Copyright © 2019 NoOrganization. All rights reserved.
+*/
+// Welcome screen
+APP_TITLE="4K Screencasts for App Artisan";
+APP_SLOGAN="Modern, priactical app development";
+RIGHTS_INFO="Copyright © 2015-2018 Boxue. All rights reserved.";
+SIGNIN="Sign In";
+BROWSE_NOW="Browse Videos";
+
+// SignIn screen
+WELCOME_LABEL="Welcome Back!";
+EMAIL="Email";
+PASSWORD="Password";
+CONTACT_US="Contact Us";
+RESET_PASSWORD="Reset Password";
+SIGN_IN_ERROR_TITLE="Sign in failed";
+SIGN_IN_ERROR_DESC="Oops! We couldn't verify your credentials.\nPlease try again.";
+
+// Request notification screen
+REQ_NOTI_TITLE="Enable Notification";
+REQ_NOTI_DESC="Want us to notifiy you with our updates?";
+REQ_NOTI_CONFIRM="YES! Turn on";
+REQ_NOTI_NOTNOW="Not now";

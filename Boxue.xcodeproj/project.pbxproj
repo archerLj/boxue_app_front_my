@@ -1,0 +1,1080 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		414C44A0225DE1BF00E9B5D1 /* BoxueAppDepedencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C449F225DE1BF00E9B5D1 /* BoxueAppDepedencyContainer.swift */; };
+		414C44A5225DE27700E9B5D1 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44A4225DE27700E9B5D1 /* NiblessViewController.swift */; };
+		414C44A7225DE5DE00E9B5D1 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44A6225DE5DE00E9B5D1 /* NiblessNavigationController.swift */; };
+		414C44A9225DE67100E9B5D1 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44A8225DE67100E9B5D1 /* NiblessView.swift */; };
+		414C44AB225DE74E00E9B5D1 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44AA225DE74E00E9B5D1 /* LaunchViewController.swift */; };
+		414C44B1225DE7A700E9B5D1 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44B0225DE7A700E9B5D1 /* LaunchViewModel.swift */; };
+		414C44B3225DE7D900E9B5D1 /* UserSessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44B2225DE7D900E9B5D1 /* UserSessionRepository.swift */; };
+		414C44B4225DE89800E9B5D1 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FD022254C5EE00CD7977 /* PromiseKit.framework */; };
+		414C44B5225DE8A400E9B5D1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FD062254C61F00CD7977 /* RxSwift.framework */; };
+		414C44B7225DE8DE00E9B5D1 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44B6225DE8DE00E9B5D1 /* UserSession.swift */; };
+		414C44B9225DE92200E9B5D1 /* NewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44B8225DE92200E9B5D1 /* NewAccount.swift */; };
+		414C44BB225DE97B00E9B5D1 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44BA225DE97B00E9B5D1 /* Secret.swift */; };
+		414C44BE225DEA8400E9B5D1 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44BD225DEA8400E9B5D1 /* Flag.swift */; };
+		414C44C0225DEAE800E9B5D1 /* GuideResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44BF225DEAE800E9B5D1 /* GuideResponder.swift */; };
+		414C44C2225DEB1500E9B5D1 /* BrowseResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44C1225DEB1500E9B5D1 /* BrowseResponder.swift */; };
+		414C44C4225DEB5500E9B5D1 /* LogMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44C3225DEB5500E9B5D1 /* LogMessage.swift */; };
+		414C44C5225DECFD00E9B5D1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FD062254C61F00CD7977 /* RxSwift.framework */; };
+		414C44C7225DEDF000E9B5D1 /* LaunchAndWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44C6225DEDF000E9B5D1 /* LaunchAndWelcomeView.swift */; };
+		414C44CA225DF29000E9B5D1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44C9225DF29000E9B5D1 /* Color.swift */; };
+		414C44CC225DF33600E9B5D1 /* UIColor_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44CB225DF33600E9B5D1 /* UIColor_Ext.swift */; };
+		414C44CE225DFB7000E9B5D1 /* String_Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44CD225DFB7000E9B5D1 /* String_Localized.swift */; };
+		414C44D1225E07F900E9B5D1 /* UIFont_Trait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414C44D0225E07F900E9B5D1 /* UIFont_Trait.swift */; };
+		41C2FCB92254BE7000CD7977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C2FCB82254BE7000CD7977 /* AppDelegate.swift */; };
+		41C2FCC02254BE7100CD7977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FCBF2254BE7100CD7977 /* Assets.xcassets */; };
+		41C2FCC32254BE7100CD7977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FCC12254BE7100CD7977 /* LaunchScreen.storyboard */; };
+		41C2FCD32254BE8B00CD7977 /* Boxue_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C2FCD12254BE8B00CD7977 /* Boxue_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C2FCD62254BE8B00CD7977 /* Boxue_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FCCF2254BE8A00CD7977 /* Boxue_iOS.framework */; };
+		41C2FCD72254BE8B00CD7977 /* Boxue_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FCCF2254BE8A00CD7977 /* Boxue_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41C2FCE52254BE9300CD7977 /* BoxueUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C2FCE32254BE9300CD7977 /* BoxueUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C2FCE82254BE9300CD7977 /* BoxueUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FCE12254BE9300CD7977 /* BoxueUIKit.framework */; };
+		41C2FCE92254BE9300CD7977 /* BoxueUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FCE12254BE9300CD7977 /* BoxueUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41C2FCF62254BE9C00CD7977 /* BoxueDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C2FCF42254BE9C00CD7977 /* BoxueDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C2FCF92254BE9C00CD7977 /* BoxueDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FCF22254BE9C00CD7977 /* BoxueDataKit.framework */; };
+		41C2FCFA2254BE9C00CD7977 /* BoxueDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FCF22254BE9C00CD7977 /* BoxueDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41C2FD012254C5E000CD7977 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FD002254C5E000CD7977 /* Kingfisher.framework */; };
+		41C2FD032254C5EE00CD7977 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FD022254C5EE00CD7977 /* PromiseKit.framework */; };
+		41C2FD052254C5FA00CD7977 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FD042254C5FA00CD7977 /* RxCocoa.framework */; };
+		41C2FD072254C61F00CD7977 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C2FD062254C61F00CD7977 /* RxSwift.framework */; };
+		41C2FD092254C72400CD7977 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FD082254C72400CD7977 /* .gitignore */; };
+		41C2FD0B2254C73500CD7977 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FD0A2254C73500CD7977 /* Cartfile */; };
+		41C2FD0F2254C97A00CD7977 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FD112254C97A00CD7977 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41C2FCD42254BE8B00CD7977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41C2FCAD2254BE7000CD7977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C2FCCE2254BE8A00CD7977;
+			remoteInfo = Boxue_iOS;
+		};
+		41C2FCE62254BE9300CD7977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41C2FCAD2254BE7000CD7977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C2FCE02254BE9300CD7977;
+			remoteInfo = BoxueUIKit;
+		};
+		41C2FCF72254BE9C00CD7977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41C2FCAD2254BE7000CD7977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C2FCF12254BE9C00CD7977;
+			remoteInfo = BoxueDataKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		41C2FCDB2254BE8B00CD7977 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				41C2FCD72254BE8B00CD7977 /* Boxue_iOS.framework in Embed Frameworks */,
+				41C2FCFA2254BE9C00CD7977 /* BoxueDataKit.framework in Embed Frameworks */,
+				41C2FCE92254BE9300CD7977 /* BoxueUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		414C449F225DE1BF00E9B5D1 /* BoxueAppDepedencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxueAppDepedencyContainer.swift; sourceTree = "<group>"; };
+		414C44A4225DE27700E9B5D1 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		414C44A6225DE5DE00E9B5D1 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
+		414C44A8225DE67100E9B5D1 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
+		414C44AA225DE74E00E9B5D1 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		414C44B0225DE7A700E9B5D1 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		414C44B2225DE7D900E9B5D1 /* UserSessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionRepository.swift; sourceTree = "<group>"; };
+		414C44B6225DE8DE00E9B5D1 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		414C44B8225DE92200E9B5D1 /* NewAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccount.swift; sourceTree = "<group>"; };
+		414C44BA225DE97B00E9B5D1 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		414C44BD225DEA8400E9B5D1 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		414C44BF225DEAE800E9B5D1 /* GuideResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideResponder.swift; sourceTree = "<group>"; };
+		414C44C1225DEB1500E9B5D1 /* BrowseResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseResponder.swift; sourceTree = "<group>"; };
+		414C44C3225DEB5500E9B5D1 /* LogMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMessage.swift; sourceTree = "<group>"; };
+		414C44C6225DEDF000E9B5D1 /* LaunchAndWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAndWelcomeView.swift; sourceTree = "<group>"; };
+		414C44C9225DF29000E9B5D1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		414C44CB225DF33600E9B5D1 /* UIColor_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Ext.swift; sourceTree = "<group>"; };
+		414C44CD225DFB7000E9B5D1 /* String_Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Localized.swift; sourceTree = "<group>"; };
+		414C44D0225E07F900E9B5D1 /* UIFont_Trait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont_Trait.swift; sourceTree = "<group>"; };
+		41C2FCB52254BE7000CD7977 /* Boxue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boxue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C2FCB82254BE7000CD7977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41C2FCBF2254BE7100CD7977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41C2FCC22254BE7100CD7977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41C2FCC42254BE7100CD7977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41C2FCCF2254BE8A00CD7977 /* Boxue_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Boxue_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C2FCD12254BE8B00CD7977 /* Boxue_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Boxue_iOS.h; sourceTree = "<group>"; };
+		41C2FCD22254BE8B00CD7977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41C2FCE12254BE9300CD7977 /* BoxueUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoxueUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C2FCE32254BE9300CD7977 /* BoxueUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoxueUIKit.h; sourceTree = "<group>"; };
+		41C2FCE42254BE9300CD7977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41C2FCF22254BE9C00CD7977 /* BoxueDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoxueDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C2FCF42254BE9C00CD7977 /* BoxueDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoxueDataKit.h; sourceTree = "<group>"; };
+		41C2FCF52254BE9C00CD7977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41C2FD002254C5E000CD7977 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		41C2FD022254C5EE00CD7977 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
+		41C2FD042254C5FA00CD7977 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		41C2FD062254C61F00CD7977 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		41C2FD082254C72400CD7977 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		41C2FD0A2254C73500CD7977 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		41C2FD102254C97A00CD7977 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		41C2FD122254C9CB00CD7977 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41C2FCB22254BE7000CD7977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C2FD072254C61F00CD7977 /* RxSwift.framework in Frameworks */,
+				41C2FD052254C5FA00CD7977 /* RxCocoa.framework in Frameworks */,
+				41C2FD032254C5EE00CD7977 /* PromiseKit.framework in Frameworks */,
+				41C2FD012254C5E000CD7977 /* Kingfisher.framework in Frameworks */,
+				41C2FCD62254BE8B00CD7977 /* Boxue_iOS.framework in Frameworks */,
+				41C2FCF92254BE9C00CD7977 /* BoxueDataKit.framework in Frameworks */,
+				41C2FCE82254BE9300CD7977 /* BoxueUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCCC2254BE8A00CD7977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414C44C5225DECFD00E9B5D1 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCDE2254BE9300CD7977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCEF2254BE9C00CD7977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414C44B5225DE8A400E9B5D1 /* RxSwift.framework in Frameworks */,
+				414C44B4225DE89800E9B5D1 /* PromiseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		414C449E225DE1B100E9B5D1 /* iOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				414C449F225DE1BF00E9B5D1 /* BoxueAppDepedencyContainer.swift */,
+				414C44AA225DE74E00E9B5D1 /* LaunchViewController.swift */,
+				414C44C6225DEDF000E9B5D1 /* LaunchAndWelcomeView.swift */,
+			);
+			path = iOSApp;
+			sourceTree = "<group>";
+		};
+		414C44A1225DE22D00E9B5D1 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				414C44A2225DE25300E9B5D1 /* UIKit */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		414C44A2225DE25300E9B5D1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				414C44CF225E07E400E9B5D1 /* Font */,
+				414C44C8225DF28600E9B5D1 /* Style */,
+				414C44A3225DE25C00E9B5D1 /* Nibless */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		414C44A3225DE25C00E9B5D1 /* Nibless */ = {
+			isa = PBXGroup;
+			children = (
+				414C44A4225DE27700E9B5D1 /* NiblessViewController.swift */,
+				414C44A6225DE5DE00E9B5D1 /* NiblessNavigationController.swift */,
+				414C44A8225DE67100E9B5D1 /* NiblessView.swift */,
+			);
+			path = Nibless;
+			sourceTree = "<group>";
+		};
+		414C44AC225DE77000E9B5D1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				414C44AE225DE78400E9B5D1 /* Repositories */,
+				414C44AD225DE77D00E9B5D1 /* Model */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		414C44AD225DE77D00E9B5D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				414C44B6225DE8DE00E9B5D1 /* UserSession.swift */,
+				414C44B8225DE92200E9B5D1 /* NewAccount.swift */,
+				414C44BA225DE97B00E9B5D1 /* Secret.swift */,
+				414C44C3225DEB5500E9B5D1 /* LogMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		414C44AE225DE78400E9B5D1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				414C44B2225DE7D900E9B5D1 /* UserSessionRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		414C44AF225DE79700E9B5D1 /* PresentLayer */ = {
+			isa = PBXGroup;
+			children = (
+				414C44B0225DE7A700E9B5D1 /* LaunchViewModel.swift */,
+				414C44BF225DEAE800E9B5D1 /* GuideResponder.swift */,
+				414C44C1225DEB1500E9B5D1 /* BrowseResponder.swift */,
+			);
+			path = PresentLayer;
+			sourceTree = "<group>";
+		};
+		414C44BC225DEA7500E9B5D1 /* StdLib */ = {
+			isa = PBXGroup;
+			children = (
+				414C44BD225DEA8400E9B5D1 /* Flag.swift */,
+				414C44CD225DFB7000E9B5D1 /* String_Localized.swift */,
+			);
+			path = StdLib;
+			sourceTree = "<group>";
+		};
+		414C44C8225DF28600E9B5D1 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				414C44C9225DF29000E9B5D1 /* Color.swift */,
+				414C44CB225DF33600E9B5D1 /* UIColor_Ext.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		414C44CF225E07E400E9B5D1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				414C44D0225E07F900E9B5D1 /* UIFont_Trait.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		41C2FCAC2254BE7000CD7977 = {
+			isa = PBXGroup;
+			children = (
+				41C2FD082254C72400CD7977 /* .gitignore */,
+				41C2FD0A2254C73500CD7977 /* Cartfile */,
+				41C2FCB72254BE7000CD7977 /* Boxue */,
+				41C2FCD02254BE8B00CD7977 /* Boxue_iOS */,
+				41C2FCE22254BE9300CD7977 /* BoxueUIKit */,
+				41C2FCF32254BE9C00CD7977 /* BoxueDataKit */,
+				41C2FCB62254BE7000CD7977 /* Products */,
+				41C2FCFF2254C5E000CD7977 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41C2FCB62254BE7000CD7977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41C2FCB52254BE7000CD7977 /* Boxue.app */,
+				41C2FCCF2254BE8A00CD7977 /* Boxue_iOS.framework */,
+				41C2FCE12254BE9300CD7977 /* BoxueUIKit.framework */,
+				41C2FCF22254BE9C00CD7977 /* BoxueDataKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41C2FCB72254BE7000CD7977 /* Boxue */ = {
+			isa = PBXGroup;
+			children = (
+				41C2FCB82254BE7000CD7977 /* AppDelegate.swift */,
+				41C2FCBF2254BE7100CD7977 /* Assets.xcassets */,
+				41C2FCC12254BE7100CD7977 /* LaunchScreen.storyboard */,
+				41C2FD112254C97A00CD7977 /* Localizable.strings */,
+				41C2FCC42254BE7100CD7977 /* Info.plist */,
+			);
+			path = Boxue;
+			sourceTree = "<group>";
+		};
+		41C2FCD02254BE8B00CD7977 /* Boxue_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				414C449E225DE1B100E9B5D1 /* iOSApp */,
+				41C2FCD12254BE8B00CD7977 /* Boxue_iOS.h */,
+				41C2FCD22254BE8B00CD7977 /* Info.plist */,
+			);
+			path = Boxue_iOS;
+			sourceTree = "<group>";
+		};
+		41C2FCE22254BE9300CD7977 /* BoxueUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				414C44A1225DE22D00E9B5D1 /* Reusable */,
+				41C2FCE32254BE9300CD7977 /* BoxueUIKit.h */,
+				41C2FCE42254BE9300CD7977 /* Info.plist */,
+			);
+			path = BoxueUIKit;
+			sourceTree = "<group>";
+		};
+		41C2FCF32254BE9C00CD7977 /* BoxueDataKit */ = {
+			isa = PBXGroup;
+			children = (
+				414C44BC225DEA7500E9B5D1 /* StdLib */,
+				414C44AF225DE79700E9B5D1 /* PresentLayer */,
+				414C44AC225DE77000E9B5D1 /* DataLayer */,
+				41C2FCF42254BE9C00CD7977 /* BoxueDataKit.h */,
+				41C2FCF52254BE9C00CD7977 /* Info.plist */,
+			);
+			path = BoxueDataKit;
+			sourceTree = "<group>";
+		};
+		41C2FCFF2254C5E000CD7977 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41C2FD062254C61F00CD7977 /* RxSwift.framework */,
+				41C2FD042254C5FA00CD7977 /* RxCocoa.framework */,
+				41C2FD022254C5EE00CD7977 /* PromiseKit.framework */,
+				41C2FD002254C5E000CD7977 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41C2FCCA2254BE8A00CD7977 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C2FCD32254BE8B00CD7977 /* Boxue_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCDC2254BE9300CD7977 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C2FCE52254BE9300CD7977 /* BoxueUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCED2254BE9C00CD7977 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C2FCF62254BE9C00CD7977 /* BoxueDataKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		41C2FCB42254BE7000CD7977 /* Boxue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41C2FCC72254BE7100CD7977 /* Build configuration list for PBXNativeTarget "Boxue" */;
+			buildPhases = (
+				41C2FCB12254BE7000CD7977 /* Sources */,
+				41C2FCB22254BE7000CD7977 /* Frameworks */,
+				41C2FCB32254BE7000CD7977 /* Resources */,
+				41C2FCDB2254BE8B00CD7977 /* Embed Frameworks */,
+				41C2FCFE2254C4F000CD7977 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41C2FCD52254BE8B00CD7977 /* PBXTargetDependency */,
+				41C2FCE72254BE9300CD7977 /* PBXTargetDependency */,
+				41C2FCF82254BE9C00CD7977 /* PBXTargetDependency */,
+			);
+			name = Boxue;
+			productName = Boxue;
+			productReference = 41C2FCB52254BE7000CD7977 /* Boxue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41C2FCCE2254BE8A00CD7977 /* Boxue_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41C2FCD82254BE8B00CD7977 /* Build configuration list for PBXNativeTarget "Boxue_iOS" */;
+			buildPhases = (
+				41C2FCCA2254BE8A00CD7977 /* Headers */,
+				41C2FCCB2254BE8A00CD7977 /* Sources */,
+				41C2FCCC2254BE8A00CD7977 /* Frameworks */,
+				41C2FCCD2254BE8A00CD7977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Boxue_iOS;
+			productName = Boxue_iOS;
+			productReference = 41C2FCCF2254BE8A00CD7977 /* Boxue_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41C2FCE02254BE9300CD7977 /* BoxueUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41C2FCEA2254BE9400CD7977 /* Build configuration list for PBXNativeTarget "BoxueUIKit" */;
+			buildPhases = (
+				41C2FCDC2254BE9300CD7977 /* Headers */,
+				41C2FCDD2254BE9300CD7977 /* Sources */,
+				41C2FCDE2254BE9300CD7977 /* Frameworks */,
+				41C2FCDF2254BE9300CD7977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxueUIKit;
+			productName = BoxueUIKit;
+			productReference = 41C2FCE12254BE9300CD7977 /* BoxueUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41C2FCF12254BE9C00CD7977 /* BoxueDataKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41C2FCFB2254BE9C00CD7977 /* Build configuration list for PBXNativeTarget "BoxueDataKit" */;
+			buildPhases = (
+				41C2FCED2254BE9C00CD7977 /* Headers */,
+				41C2FCEE2254BE9C00CD7977 /* Sources */,
+				41C2FCEF2254BE9C00CD7977 /* Frameworks */,
+				41C2FCF02254BE9C00CD7977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxueDataKit;
+			productName = BoxueDataKit;
+			productReference = 41C2FCF22254BE9C00CD7977 /* BoxueDataKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41C2FCAD2254BE7000CD7977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = NoOrganization;
+				TargetAttributes = {
+					41C2FCB42254BE7000CD7977 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					41C2FCCE2254BE8A00CD7977 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					41C2FCE02254BE9300CD7977 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					41C2FCF12254BE9C00CD7977 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 41C2FCB02254BE7000CD7977 /* Build configuration list for PBXProject "Boxue" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 41C2FCAC2254BE7000CD7977;
+			productRefGroup = 41C2FCB62254BE7000CD7977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41C2FCB42254BE7000CD7977 /* Boxue */,
+				41C2FCCE2254BE8A00CD7977 /* Boxue_iOS */,
+				41C2FCE02254BE9300CD7977 /* BoxueUIKit */,
+				41C2FCF12254BE9C00CD7977 /* BoxueDataKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41C2FCB32254BE7000CD7977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C2FD0F2254C97A00CD7977 /* Localizable.strings in Resources */,
+				41C2FD0B2254C73500CD7977 /* Cartfile in Resources */,
+				41C2FD092254C72400CD7977 /* .gitignore in Resources */,
+				41C2FCC32254BE7100CD7977 /* LaunchScreen.storyboard in Resources */,
+				41C2FCC02254BE7100CD7977 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCCD2254BE8A00CD7977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCDF2254BE9300CD7977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCF02254BE9C00CD7977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41C2FCFE2254C4F000CD7977 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxRocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41C2FCB12254BE7000CD7977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C2FCB92254BE7000CD7977 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCCB2254BE8A00CD7977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414C44C7225DEDF000E9B5D1 /* LaunchAndWelcomeView.swift in Sources */,
+				414C44A0225DE1BF00E9B5D1 /* BoxueAppDepedencyContainer.swift in Sources */,
+				414C44AB225DE74E00E9B5D1 /* LaunchViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCDD2254BE9300CD7977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414C44A9225DE67100E9B5D1 /* NiblessView.swift in Sources */,
+				414C44D1225E07F900E9B5D1 /* UIFont_Trait.swift in Sources */,
+				414C44CC225DF33600E9B5D1 /* UIColor_Ext.swift in Sources */,
+				414C44CA225DF29000E9B5D1 /* Color.swift in Sources */,
+				414C44A7225DE5DE00E9B5D1 /* NiblessNavigationController.swift in Sources */,
+				414C44A5225DE27700E9B5D1 /* NiblessViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C2FCEE2254BE9C00CD7977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414C44CE225DFB7000E9B5D1 /* String_Localized.swift in Sources */,
+				414C44B7225DE8DE00E9B5D1 /* UserSession.swift in Sources */,
+				414C44BE225DEA8400E9B5D1 /* Flag.swift in Sources */,
+				414C44BB225DE97B00E9B5D1 /* Secret.swift in Sources */,
+				414C44C4225DEB5500E9B5D1 /* LogMessage.swift in Sources */,
+				414C44B1225DE7A700E9B5D1 /* LaunchViewModel.swift in Sources */,
+				414C44C2225DEB1500E9B5D1 /* BrowseResponder.swift in Sources */,
+				414C44B9225DE92200E9B5D1 /* NewAccount.swift in Sources */,
+				414C44C0225DEAE800E9B5D1 /* GuideResponder.swift in Sources */,
+				414C44B3225DE7D900E9B5D1 /* UserSessionRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41C2FCD52254BE8B00CD7977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41C2FCCE2254BE8A00CD7977 /* Boxue_iOS */;
+			targetProxy = 41C2FCD42254BE8B00CD7977 /* PBXContainerItemProxy */;
+		};
+		41C2FCE72254BE9300CD7977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41C2FCE02254BE9300CD7977 /* BoxueUIKit */;
+			targetProxy = 41C2FCE62254BE9300CD7977 /* PBXContainerItemProxy */;
+		};
+		41C2FCF82254BE9C00CD7977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41C2FCF12254BE9C00CD7977 /* BoxueDataKit */;
+			targetProxy = 41C2FCF72254BE9C00CD7977 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41C2FCC12254BE7100CD7977 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41C2FCC22254BE7100CD7977 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		41C2FD112254C97A00CD7977 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41C2FD102254C97A00CD7977 /* en */,
+				41C2FD122254C9CB00CD7977 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41C2FCC52254BE7100CD7977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41C2FCC62254BE7100CD7977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41C2FCC82254BE7100CD7977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U272S7D2C9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Boxue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techsun.zhonghua;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41C2FCC92254BE7100CD7977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U272S7D2C9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Boxue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techsun.zhonghua;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41C2FCD92254BE8B00CD7977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U272S7D2C9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Boxue_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.techsun.zhonghua.Boxue-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41C2FCDA2254BE8B00CD7977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U272S7D2C9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Boxue_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.techsun.zhonghua.Boxue-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		41C2FCEB2254BE9400CD7977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U272S7D2C9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BoxueUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techsun.zhonghua.BoxueUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41C2FCEC2254BE9400CD7977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U272S7D2C9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BoxueUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techsun.zhonghua.BoxueUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		41C2FCFC2254BE9C00CD7977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U272S7D2C9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BoxueDataKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techsun.zhonghua.BoxueDataKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41C2FCFD2254BE9C00CD7977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U272S7D2C9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BoxueDataKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techsun.zhonghua.BoxueDataKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41C2FCB02254BE7000CD7977 /* Build configuration list for PBXProject "Boxue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C2FCC52254BE7100CD7977 /* Debug */,
+				41C2FCC62254BE7100CD7977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41C2FCC72254BE7100CD7977 /* Build configuration list for PBXNativeTarget "Boxue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C2FCC82254BE7100CD7977 /* Debug */,
+				41C2FCC92254BE7100CD7977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41C2FCD82254BE8B00CD7977 /* Build configuration list for PBXNativeTarget "Boxue_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C2FCD92254BE8B00CD7977 /* Debug */,
+				41C2FCDA2254BE8B00CD7977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41C2FCEA2254BE9400CD7977 /* Build configuration list for PBXNativeTarget "BoxueUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C2FCEB2254BE9400CD7977 /* Debug */,
+				41C2FCEC2254BE9400CD7977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41C2FCFB2254BE9C00CD7977 /* Build configuration list for PBXNativeTarget "BoxueDataKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C2FCFC2254BE9C00CD7977 /* Debug */,
+				41C2FCFD2254BE9C00CD7977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41C2FCAD2254BE7000CD7977 /* Project object */;
+}
