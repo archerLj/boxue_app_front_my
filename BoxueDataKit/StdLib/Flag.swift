@@ -11,4 +11,5 @@ import UserNotifications
 
 final public class Flag {
     public static let isFirstLaunch = true
+    public static let isiOS12OrLater = false
 }

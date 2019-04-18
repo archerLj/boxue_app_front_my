@@ -8,10 +8,10 @@
 
 import UIKit
 import RxSwift
-import BoxueUIKit
 import BoxueDataKit
+import BoxueUIKit
 
-class LaunchViewController: NiblessViewController {
+public class LaunchViewController: NiblessViewController {
 
     let viewModel: LaunchViewModel
     let bag: DisposeBag = DisposeBag()
@@ -22,7 +22,11 @@ class LaunchViewController: NiblessViewController {
         super.init()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override public func loadView() {
+        self.view = LaunchRootView(viewModel: viewModel)
+    }
+    
+    override public func viewDidAppear(_ animated: Bool) {
         viewModel.gotoNextScreen()
     }
 }

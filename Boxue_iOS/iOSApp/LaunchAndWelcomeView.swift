@@ -120,15 +120,30 @@ public class LaunchAndWelcomeView: NiblessView {
         
         let hCenter = appTitleView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         let top = appTitleView.topAnchor.constraint(equalTo: self.topAnchor, constant: 140)
-        let width = appTitleView.widthAnchor
+        let width = appTitleView.widthAnchor.constraint(equalToConstant: LaunchAndWelcomeView.APP_TITLE_WIDTH)
+        let height = appTitleView.heightAnchor.constraint(equalToConstant: LaunchAndWelcomeView.APP_TITLE_HEIGHT)
+        
+        NSLayoutConstraint.activate([hCenter, top, width, height])
     }
     
     func activateConstraintsAppSlogan() {
+        appSlogan.translatesAutoresizingMaskIntoConstraints = false
         
+        let hCenter = appSlogan.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+        let width = appSlogan.widthAnchor.constraint(equalToConstant: LaunchAndWelcomeView.APP_TITLE_WIDTH)
+        let top = appSlogan.topAnchor.constraint(equalTo: self.appTitleView.bottomAnchor, constant: 40)
+        
+        NSLayoutConstraint.activate([hCenter, width, top])
     }
     
     func activateConstraintsRightsInfo() {
+        rightsInfo.translatesAutoresizingMaskIntoConstraints = false
         
+        let hCenter = rightsInfo.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+        let width = rightsInfo.widthAnchor.constraint(equalToConstant: LaunchAndWelcomeView.APP_TITLE_WIDTH)
+        let bottom = rightsInfo.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -10)
+        
+        NSLayoutConstraint.activate([hCenter, width, bottom])
     }
 }
 
