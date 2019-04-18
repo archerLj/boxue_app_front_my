@@ -30,6 +30,8 @@ public class SignInViewController: NiblessViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         self.title = .signIn
+        
+        observeErrorMessage()
     }
     
     public override func viewWillAppear(_ animated: Bool) {

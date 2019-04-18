@@ -15,14 +15,14 @@ public class GuideViewController: NiblessNavigationController {
     /// - Properties
     let bag = DisposeBag()
     let viewModel: GuideViewModel
-    
+
     let welcomeViewController: WelcomeViewController
     let signInViewController: SignInViewController
     let signUpViewController: SignUpViewController
     let contactUsViewController: ContactUsViewController
     let resetPasswordController: ResetPasswordViewController
     let requestNotificationViewController: RequestNotificationViewController
-    
+
     /// - Methods
     init(viewModel: GuideViewModel,
          welcomeViewController: WelcomeViewController,
@@ -31,7 +31,7 @@ public class GuideViewController: NiblessNavigationController {
          contactUsViewController: ContactUsViewController,
          resetPasswordController: ResetPasswordViewController,
          requestNotificationViewController: RequestNotificationViewController) {
-        
+
         self.viewModel = viewModel
         self.welcomeViewController = welcomeViewController
         self.signInViewController = signInViewController
@@ -39,25 +39,25 @@ public class GuideViewController: NiblessNavigationController {
         self.contactUsViewController = contactUsViewController
         self.resetPasswordController = resetPasswordController
         self.requestNotificationViewController = requestNotificationViewController
-        
+
         super.init()
         self.delegate = self
     }
-    
+
     public override func viewDidLoad() {
         super.viewDidLoad()
         subscribe(to: viewModel.viewStatus)
     }
-    
+
     func subscribe(to observable: Observable<GuideNavigateAction>) {
         observable.distinctUntilChanged()
             .subscribe(onNext: { [weak self] action in
                 guard let `self` = self else { return }
-                
+
                 self.respond(to: action)
             }).disposed(by: bag)
     }
-    
+
     func respond(to navigateAction: GuideNavigateAction) {
         switch navigateAction {
         case .present(let viewStatus):
@@ -66,7 +66,7 @@ public class GuideViewController: NiblessNavigationController {
             break
         }
     }
-    
+
     func present(_ viewStatus: GuideViewStatus) {
         switch viewStatus {
         case .welcome:
@@ -83,27 +83,27 @@ public class GuideViewController: NiblessNavigationController {
             self.presentRequestNotificationViewController()
         }
     }
-    
+
     func presentWelcomeViewController() {
-        pushViewController(welcomeViewController, animated: true)
+        pushViewController(welcomeViewController, animated: false)
     }
-    
+
     func presentSignInViewController() {
         pushViewController(signInViewController, animated: true)
     }
-    
+
     func presentSignUpViewController() {
         pushViewController(signUpViewController, animated: true)
     }
-    
+
     func presentContactUsViewController() {
         pushViewController(contactUsViewController, animated: true)
     }
-    
+
     func presentResetPasswordViewController() {
         pushViewController(resetPasswordController, animated: true)
     }
-    
+
     func presentRequestNotificationViewController() {
         pushViewController(requestNotificationViewController, animated: true)
     }
@@ -112,12 +112,12 @@ public class GuideViewController: NiblessNavigationController {
 extension GuideViewController {
     func toggleNavigationBar(for view: GuideViewStatus, animated: Bool)  {
         if view.hideNavigationBar() {
-            hideNavigationBar(animated: true)
+            hideNavigationBar(animated: animated)
         } else {
-            showNavigationBar(animated: true)
+            showNavigationBar(animated: animated)
         }
     }
-    
+
     func hideNavigationBar(animated: Bool) {
         if animated {
             transitionCoordinator?.animate(alongsideTransition: { context in
@@ -127,7 +127,7 @@ extension GuideViewController {
             self.setNavigationBarHidden(true, animated: false)
         }
     }
-    
+
     func showNavigationBar(animated: Bool) {
         if animated {
             transitionCoordinator?.animate(alongsideTransition: { context in
@@ -141,24 +141,17 @@ extension GuideViewController {
 
 /// - UINavigationControllerDelegate
 extension GuideViewController: UINavigationControllerDelegate {
-    private func navigationController(_ navigationController: UINavigationController,
+    public func navigationController(_ navigationController: UINavigationController,
                               willShow viewController: UIViewController,
                               animated: Bool) {
-        
-        guard let destView = guidingView(to: viewController) else {
-            return
-        }
-        
+        guard let destView = guidingView(to: viewController) else { return }
         toggleNavigationBar(for: destView, animated: animated)
     }
-    
-    private func navigationController(_ navigationController: UINavigationController,
+
+    public func navigationController(_ navigationController: UINavigationController,
                               didShow viewController: UIViewController,
                               animated: Bool) {
-        
-        guard let destView = guidingView(to: viewController) else {
-            return
-        }
+        guard let destView = guidingView(to: viewController) else { return }
         viewModel.presented(guideViewStatus: destView)
     }
 }

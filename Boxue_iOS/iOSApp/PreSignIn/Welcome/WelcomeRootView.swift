@@ -64,7 +64,7 @@ public class WelcomeRootView: LaunchAndWelcomeView {
         let hCenter = buttonStackView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         let leading = buttonStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20)
         let trailing = buttonStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20)
-        let bottom = buttonStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -55)
+        let bottom = buttonStackView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -55)
         
         NSLayoutConstraint.activate([hCenter, leading, trailing, bottom])
     }

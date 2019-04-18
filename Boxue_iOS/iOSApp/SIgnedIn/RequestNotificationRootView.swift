@@ -154,7 +154,7 @@ class RequestNotificationRootView: NiblessView {
         NSLayoutConstraint.activate([
             enableTitle.topAnchor.constraint(equalTo: notificationIcon.bottomAnchor, constant: 26),
             enableTitle.leadingAnchor.constraint(equalTo: self.layoutMarginsGuide.leadingAnchor),
-            enableButton.trailingAnchor.constraint(equalTo: self.layoutMarginsGuide.trailingAnchor)
+            enableTitle.trailingAnchor.constraint(equalTo: self.layoutMarginsGuide.trailingAnchor)
             ])
     }
     
@@ -163,8 +163,8 @@ class RequestNotificationRootView: NiblessView {
         
         NSLayoutConstraint.activate([
             enableDesc.leadingAnchor.constraint(equalTo: self.layoutMarginsGuide.leadingAnchor),
-            enableButton.trailingAnchor.constraint(equalTo: self.layoutMarginsGuide.trailingAnchor),
-            enableButton.bottomAnchor.constraint(equalTo: self.buttonStackView.topAnchor, constant: -20)
+            enableDesc.trailingAnchor.constraint(equalTo: self.layoutMarginsGuide.trailingAnchor),
+            enableDesc.bottomAnchor.constraint(equalTo: self.buttonStackView.topAnchor, constant: -20)
             ])
     }
     
