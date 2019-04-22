@@ -51,14 +51,14 @@ public class SignInViewModel {
     
     
     /// - Other methods
-    func indicateSigningIn() {
+    public func indicateSigningIn() {
         emailInputEnabled.onNext(false)
         passwordInputEnabled.onNext(false)
         signInButtonEnabled.onNext(false)
         signInActivityIndicatorAnimating.onNext(true)
     }
     
-    func indicateSignInError(_ error: Error) {
+    public func indicateSignInError(_ error: Error) {
         errorMessageSubject.onNext(err)
         emailInputEnabled.onNext(true)
         passwordInputEnabled.onNext(true)
