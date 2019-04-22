@@ -18,7 +18,7 @@ public class BoxueGuideDependencyContainer {
     /// Long lived dependencies
     let sharedGuideViewModel: GuideViewModel
     
-    init(appDependencyContainer: BoxueAppDepedencyContainer) {
+    public init(appDependencyContainer: BoxueAppDepedencyContainer) {
         func makeGuideViewModel() -> GuideViewModel {
             return GuideViewModel()
         }
@@ -65,7 +65,7 @@ public class BoxueGuideDependencyContainer {
 
 
 extension BoxueGuideDependencyContainer: WelcomeViewModelFactory {
-    func makeWelcomViewModel() -> WelcomeViewModel {
+    public func makeWelcomViewModel() -> WelcomeViewModel {
         return WelcomeViewModel(browserResponder: sharedMainViewModel,
                                 navigateToSignIn: sharedGuideViewModel,
                                 navigateToRequestNotification: sharedGuideViewModel)
@@ -73,7 +73,7 @@ extension BoxueGuideDependencyContainer: WelcomeViewModelFactory {
 }
 
 extension BoxueGuideDependencyContainer: SignInViewModelFactory {
-    func makeSignInViewModel() -> SignInViewModel {
+    public func makeSignInViewModel() -> SignInViewModel {
         return SignInViewModel(userSessionRepository: sharedUserSessionRepository,
                                browseResponder: sharedMainViewModel,
                                navigateToRequestNotification: sharedGuideViewModel)

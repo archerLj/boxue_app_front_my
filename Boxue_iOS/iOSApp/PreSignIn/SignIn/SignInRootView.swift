@@ -222,6 +222,8 @@ class SignInRootView: NiblessView {
         scrollView.contentInset = .zero
     }
     
+    // 通过设置scrollView的contentInset属性，将scrollView下部留出一个键盘高度的空白
+    // 这样scrollView的可滚动区域就会多了。
     func moveContenForKeyboardDisplay(keyboardFrame: CGRect) {
         scrollView.contentInset.bottom = keyboardFrame.height
     }
@@ -241,6 +243,11 @@ extension SignInRootView {
     }
     
     func activateConstraintsContentView() {
+        // 设置contentView的关键是要确定scrollView的contentsize.
+        // iOS 11之后，crollview多了contentLayoutGuide属性，只要将contentView的四个约束点固定在contentLayoutGuide的
+        // 四个点上，scrollView就能自动计算contentSize了。contentView的宽高就要另行计算了。下面这里直接将宽高和scrollView
+        // 一样了，暂时就不能滚动了.只要确定了contentView的宽高或者下右两边的约束，并把他约束到contentLayoutGuide的
+        // 四个点上就能正常滚动了
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
         let svCLG = scrollView.contentLayoutGuide
@@ -253,6 +260,11 @@ extension SignInRootView {
             contentView.leadingAnchor.constraint(equalTo: svCLG.leadingAnchor),
             contentView.trailingAnchor.constraint(equalTo: svCLG.trailingAnchor)
             ])
+        
+        // iOS 11后，多了一个contentInsertAdjustmentBehavior属性，scrollView知道父试图的safe area，他会自动将
+        // 子试图放置在safe area内，比如iPhoneX，即使scrollView起始点在刘海下面，他的滚动内容还是会把刘海空出来。当然
+        // 如果把这个属性设置成.never，滚动内容就会覆盖刘海区域了
+//        scrollView.contentInsetAdjustmentBehavior = .never
     }
     
     func activateConstraintsWelcomeLabel() {

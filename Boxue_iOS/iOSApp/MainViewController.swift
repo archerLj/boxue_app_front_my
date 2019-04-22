@@ -116,15 +116,17 @@ public class MainViewController: NiblessViewController {
         }
         
         addFullScreen(childViewController: browseViewControllerPresent)
+        // presentingViewController
         if guideViewController?.presentingViewController != nil {
             guideViewController = nil
+            // dismiss
             dismiss(animated: true)
         }
     }
 }
 
 extension MainViewController: UIViewControllerTransitioningDelegate {
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return dissolveTransitions
     }
 }

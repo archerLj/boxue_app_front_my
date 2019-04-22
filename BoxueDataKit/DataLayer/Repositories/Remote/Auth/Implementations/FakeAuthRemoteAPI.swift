@@ -24,6 +24,7 @@ public struct FakeAuthRemoteAPI: AuthRemoteAPI {
     public func signIn(username: String, password: Secret) -> Promise<UserSession> {
         return Promise<UserSession> { seal in
             guard username == Fake.email && password == Fake.password else {
+                // 没有得到期望的值，比如出错，就用seal.reject，对应的catch就会执行
                 return seal.reject(DataKitError.any)
             }
             
@@ -31,6 +32,7 @@ public struct FakeAuthRemoteAPI: AuthRemoteAPI {
             let remoteSession = RemoteUserSession(token: Fake.token)
             let userSession = UserSession(profile: profile, remoteUserSession: remoteSession)
             
+            // 得到了期望的值，就调用seal.fulfill，对应的then或者done就会执行
             seal.fulfill(userSession)
         }
     }

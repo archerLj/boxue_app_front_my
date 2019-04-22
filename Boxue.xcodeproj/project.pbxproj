@@ -76,6 +76,7 @@
 		41780A402267453700F22B32 /* RequestNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41780A3F2267453700F22B32 /* RequestNotificationViewController.swift */; };
 		41780A422268168000F22B32 /* BoxueSignedInDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41780A412268168000F22B32 /* BoxueSignedInDependencyContainer.swift */; };
 		41780A442268180C00F22B32 /* BrowseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41780A432268180C00F22B32 /* BrowseViewModel.swift */; };
+		41780A4F226D880000F22B32 /* BoxueSignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41780A4E226D880000F22B32 /* BoxueSignInViewModelTests.swift */; };
 		41C2FCB92254BE7000CD7977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C2FCB82254BE7000CD7977 /* AppDelegate.swift */; };
 		41C2FCC02254BE7100CD7977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FCBF2254BE7100CD7977 /* Assets.xcassets */; };
 		41C2FCC32254BE7100CD7977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FCC12254BE7100CD7977 /* LaunchScreen.storyboard */; };
@@ -98,6 +99,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		41780A51226D880000F22B32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41C2FCAD2254BE7000CD7977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C2FCB42254BE7000CD7977;
+			remoteInfo = Boxue;
+		};
 		41C2FCD42254BE8B00CD7977 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 41C2FCAD2254BE7000CD7977 /* Project object */;
@@ -200,6 +208,9 @@
 		41780A3F2267453700F22B32 /* RequestNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestNotificationViewController.swift; sourceTree = "<group>"; };
 		41780A412268168000F22B32 /* BoxueSignedInDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxueSignedInDependencyContainer.swift; sourceTree = "<group>"; };
 		41780A432268180C00F22B32 /* BrowseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewModel.swift; sourceTree = "<group>"; };
+		41780A4C226D87FF00F22B32 /* BoxueUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxueUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41780A4E226D880000F22B32 /* BoxueSignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxueSignInViewModelTests.swift; sourceTree = "<group>"; };
+		41780A50226D880000F22B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41C2FCB52254BE7000CD7977 /* Boxue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boxue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C2FCB82254BE7000CD7977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41C2FCBF2254BE7100CD7977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -225,6 +236,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		41780A49226D87FF00F22B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41C2FCB22254BE7000CD7977 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,8 +446,8 @@
 		416F297522656CAA0015ED61 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				416F297B22656D580015ED61 /* Auth */,
 				416F2989226572690015ED61 /* RemoteUserSession.swift */,
+				416F297B22656D580015ED61 /* Auth */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -445,8 +463,8 @@
 		416F297722656CBB0015ED61 /* UserSessionStore */ = {
 			isa = PBXGroup;
 			children = (
-				416F297822656CC90015ED61 /* Implementations */,
 				416F297922656CE70015ED61 /* UserSessionStore.swift */,
+				416F297822656CC90015ED61 /* Implementations */,
 			);
 			path = UserSessionStore;
 			sourceTree = "<group>";
@@ -567,6 +585,15 @@
 			path = ResetPassword;
 			sourceTree = "<group>";
 		};
+		41780A4D226D880000F22B32 /* BoxueSignInViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				41780A4E226D880000F22B32 /* BoxueSignInViewModelTests.swift */,
+				41780A50226D880000F22B32 /* Info.plist */,
+			);
+			path = BoxueSignInViewModelTests;
+			sourceTree = "<group>";
+		};
 		41C2FCAC2254BE7000CD7977 = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +603,7 @@
 				41C2FCD02254BE8B00CD7977 /* Boxue_iOS */,
 				41C2FCE22254BE9300CD7977 /* BoxueUIKit */,
 				41C2FCF32254BE9C00CD7977 /* BoxueDataKit */,
+				41780A4D226D880000F22B32 /* BoxueSignInViewModelTests */,
 				41C2FCB62254BE7000CD7977 /* Products */,
 				41C2FCFF2254C5E000CD7977 /* Frameworks */,
 			);
@@ -588,6 +616,7 @@
 				41C2FCCF2254BE8A00CD7977 /* Boxue_iOS.framework */,
 				41C2FCE12254BE9300CD7977 /* BoxueUIKit.framework */,
 				41C2FCF22254BE9C00CD7977 /* BoxueDataKit.framework */,
+				41780A4C226D87FF00F22B32 /* BoxueUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -677,6 +706,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		41780A4B226D87FF00F22B32 /* BoxueUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41780A53226D880000F22B32 /* Build configuration list for PBXNativeTarget "BoxueUnitTests" */;
+			buildPhases = (
+				41780A48226D87FF00F22B32 /* Sources */,
+				41780A49226D87FF00F22B32 /* Frameworks */,
+				41780A4A226D87FF00F22B32 /* Resources */,
+				41780A56226D88B000F22B32 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41780A52226D880000F22B32 /* PBXTargetDependency */,
+			);
+			name = BoxueUnitTests;
+			productName = BoxueSignInViewModelTests;
+			productReference = 41780A4C226D87FF00F22B32 /* BoxueUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		41C2FCB42254BE7000CD7977 /* Boxue */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41C2FCC72254BE7100CD7977 /* Build configuration list for PBXNativeTarget "Boxue" */;
@@ -759,10 +807,14 @@
 		41C2FCAD2254BE7000CD7977 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = NoOrganization;
 				TargetAttributes = {
+					41780A4B226D87FF00F22B32 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 41C2FCB42254BE7000CD7977;
+					};
 					41C2FCB42254BE7000CD7977 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -798,11 +850,19 @@
 				41C2FCCE2254BE8A00CD7977 /* Boxue_iOS */,
 				41C2FCE02254BE9300CD7977 /* BoxueUIKit */,
 				41C2FCF12254BE9C00CD7977 /* BoxueDataKit */,
+				41780A4B226D87FF00F22B32 /* BoxueUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		41780A4A226D87FF00F22B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41C2FCB32254BE7000CD7977 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -864,9 +924,36 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
+		41780A56226D88B000F22B32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		41780A48226D87FF00F22B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41780A4F226D880000F22B32 /* BoxueSignInViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41C2FCB12254BE7000CD7977 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -961,6 +1048,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		41780A52226D880000F22B32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41C2FCB42254BE7000CD7977 /* Boxue */;
+			targetProxy = 41780A51226D880000F22B32 /* PBXContainerItemProxy */;
+		};
 		41C2FCD52254BE8B00CD7977 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41C2FCCE2254BE8A00CD7977 /* Boxue_iOS */;
@@ -999,6 +1091,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		41780A54226D880000F22B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U272S7D2C9;
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/iOS";
+				INFOPLIST_FILE = BoxueUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techsun.zhonghua.BoxueSignInViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boxue.app/Boxue";
+			};
+			name = Debug;
+		};
+		41780A55226D880000F22B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U272S7D2C9;
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/iOS";
+				INFOPLIST_FILE = BoxueUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techsun.zhonghua.BoxueSignInViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boxue.app/Boxue";
+			};
+			name = Release;
+		};
 		41C2FCC52254BE7100CD7977 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1034,6 +1170,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_ACTIVITY_MODE = "";
+				"DEBUG_ACTIVITY_MODE[arch=*]" = disable;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1096,6 +1234,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_ACTIVITY_MODE = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1369,6 +1508,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		41780A53226D880000F22B32 /* Build configuration list for PBXNativeTarget "BoxueUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41780A54226D880000F22B32 /* Debug */,
+				41780A55226D880000F22B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		41C2FCB02254BE7000CD7977 /* Build configuration list for PBXProject "Boxue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
