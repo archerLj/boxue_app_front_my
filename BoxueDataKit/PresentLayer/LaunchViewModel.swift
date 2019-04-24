@@ -12,7 +12,7 @@ import RxSwift
 public class LaunchViewModel {
     
     /// - Properties
-    var isFirstLaunch = Flag.isFirstLaunch
+    public var isFirstLaunch = Flag.isFirstLaunch
     
     let userSessionRepository: UserSessionRepository
     let guideResponder: GuideResponder

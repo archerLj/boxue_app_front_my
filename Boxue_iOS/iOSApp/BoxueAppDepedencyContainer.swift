@@ -70,7 +70,7 @@ public class BoxueAppDepedencyContainer {
 }
 
 extension BoxueAppDepedencyContainer: LaunchViewModelFactory {
-    func makeLaunchViewModel() -> LaunchViewModel {
+    public func makeLaunchViewModel() -> LaunchViewModel {
         return LaunchViewModel(userSessionRepository: self.sharedUserSessionRepository,
                                guideResponder: self.sharedMainViewModel,
                                browserResponder: self.sharedMainViewModel)

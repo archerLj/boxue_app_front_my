@@ -44,10 +44,6 @@ public class WelcomeViewController: NiblessViewController {
             UNUserNotificationCenter.current()
                 .requestAuthorization(options: [.badge, .alert, .sound, .provisional])
                 .catch { fatalError($0.localizedDescription) }
-        } else {
-            UNUserNotificationCenter.current()
-            .requestAuthorization(options: [.badge, .alert, .sound])
-                .catch { fatalError($0.localizedDescription) }
         }
     }
 }

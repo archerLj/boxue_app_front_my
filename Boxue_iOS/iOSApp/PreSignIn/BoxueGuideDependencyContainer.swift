@@ -16,7 +16,7 @@ public class BoxueGuideDependencyContainer {
     let sharedUserSessionRepository: UserSessionRepository
     
     /// Long lived dependencies
-    let sharedGuideViewModel: GuideViewModel
+    public let sharedGuideViewModel: GuideViewModel
     
     public init(appDependencyContainer: BoxueAppDepedencyContainer) {
         func makeGuideViewModel() -> GuideViewModel {

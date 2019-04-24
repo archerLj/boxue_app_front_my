@@ -66,7 +66,7 @@ public class SignInViewModel {
         signInActivityIndicatorAnimating.onNext(false)
     }
     
-    func getEmailAndPassword() -> (String, Secret) {
+    public func getEmailAndPassword() -> (String, Secret) {
         do {
             let email = try emailInput.value()
             let password = try passwordInput.value()
@@ -95,7 +95,7 @@ public class SignInViewModel {
             }.catch(self.indicateSignInError)
     }
     
-    func transmute(withPermissionNotDetermined: Bool) {
+    public func transmute(withPermissionNotDetermined: Bool) {
         withPermissionNotDetermined ? navigateToNotification() : navigateToBrowse()
     }
 }

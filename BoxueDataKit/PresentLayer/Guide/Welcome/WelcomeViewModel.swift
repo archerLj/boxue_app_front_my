@@ -13,7 +13,7 @@ import PromiseKit
 
 public class WelcomeViewModel {
     /// - Properties
-    var isiOS12OrLater: Bool = Flag.isiOS12OrLater
+    public var isiOS12OrLater: Bool = Flag.isiOS12OrLater
     lazy var isNotificationPermissionNotDetermined = UNUserNotificationCenter.current().isNotificationPermissionNotDetermined()
     
     let browserResponder: BrowseResponder
@@ -43,15 +43,17 @@ public class WelcomeViewModel {
         firstly {
             UNUserNotificationCenter.current().isNotificationPermissionNotDetermined()
             }.done {
+                // 这里因为.done是异步的，所以单元测试不能进行，就把.done里面的内容单独拿出来
+                // 这样单元测试就只测试self.transmute()方法就可以了
                 self.transmute(withPermissionNoteDetermined: $0)
         }
     }
     
-    func transmute(withPermissionNoteDetermined: Bool) {
+    public func transmute(withPermissionNoteDetermined: Bool) {
         withPermissionNoteDetermined ? requestNotification() : browseDirectly()
     }
     
-    func requestNotification() {
+    public func requestNotification() {
         if isiOS12OrLater {
             requestProvisionalNotificationSubject.onNext(())
             browserResponder.browse()
@@ -60,7 +62,7 @@ public class WelcomeViewModel {
         }
     }
     
-    func browseDirectly() {
-        
+    public func browseDirectly() {
+        self.browserResponder.browse()
     }
 }

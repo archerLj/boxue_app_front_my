@@ -1,0 +1,14 @@
+os: osx
+language: swift
+osx_image: xcode10.2
+xcode_scheme: Boxue
+xcode_project: Boxue.xcodeproj
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
+
+script:
+    - carthage update --platform iOS
+    - xcodebuild -scheme Boxue -sdk iponesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.1' test
+
+notifications:
+    email:
+      - lj0011977@163.com 

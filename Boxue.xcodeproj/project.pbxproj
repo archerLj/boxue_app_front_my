@@ -76,7 +76,7 @@
 		41780A402267453700F22B32 /* RequestNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41780A3F2267453700F22B32 /* RequestNotificationViewController.swift */; };
 		41780A422268168000F22B32 /* BoxueSignedInDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41780A412268168000F22B32 /* BoxueSignedInDependencyContainer.swift */; };
 		41780A442268180C00F22B32 /* BrowseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41780A432268180C00F22B32 /* BrowseViewModel.swift */; };
-		41780A4F226D880000F22B32 /* BoxueSignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41780A4E226D880000F22B32 /* BoxueSignInViewModelTests.swift */; };
+		41780A4F226D880000F22B32 /* SignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41780A4E226D880000F22B32 /* SignInViewModelTests.swift */; };
 		41C2FCB92254BE7000CD7977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C2FCB82254BE7000CD7977 /* AppDelegate.swift */; };
 		41C2FCC02254BE7100CD7977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FCBF2254BE7100CD7977 /* Assets.xcassets */; };
 		41C2FCC32254BE7100CD7977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FCC12254BE7100CD7977 /* LaunchScreen.storyboard */; };
@@ -96,6 +96,12 @@
 		41C2FD092254C72400CD7977 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FD082254C72400CD7977 /* .gitignore */; };
 		41C2FD0B2254C73500CD7977 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FD0A2254C73500CD7977 /* Cartfile */; };
 		41C2FD0F2254C97A00CD7977 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41C2FD112254C97A00CD7977 /* Localizable.strings */; };
+		41CDC16A226EFC3F00C5B7B5 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CDC169226EFC3F00C5B7B5 /* CommonTests.swift */; };
+		41CDC16C226F03CD00C5B7B5 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CDC16B226F03CD00C5B7B5 /* MainViewModelTests.swift */; };
+		41CDC16E226F079D00C5B7B5 /* LaunchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CDC16D226F079D00C5B7B5 /* LaunchViewModelTests.swift */; };
+		41CDC170226F0C1500C5B7B5 /* GuideViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CDC16F226F0C1500C5B7B5 /* GuideViewModelTests.swift */; };
+		41CDC172226F139000C5B7B5 /* WelcomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CDC171226F139000C5B7B5 /* WelcomeViewModelTests.swift */; };
+		41CDC176226FEA4900C5B7B5 /* NotificationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CDC175226FEA4900C5B7B5 /* NotificationViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -209,7 +215,7 @@
 		41780A412268168000F22B32 /* BoxueSignedInDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxueSignedInDependencyContainer.swift; sourceTree = "<group>"; };
 		41780A432268180C00F22B32 /* BrowseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewModel.swift; sourceTree = "<group>"; };
 		41780A4C226D87FF00F22B32 /* BoxueUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxueUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41780A4E226D880000F22B32 /* BoxueSignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxueSignInViewModelTests.swift; sourceTree = "<group>"; };
+		41780A4E226D880000F22B32 /* SignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTests.swift; sourceTree = "<group>"; };
 		41780A50226D880000F22B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41C2FCB52254BE7000CD7977 /* Boxue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boxue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C2FCB82254BE7000CD7977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +239,12 @@
 		41C2FD0A2254C73500CD7977 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		41C2FD102254C97A00CD7977 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		41C2FD122254C9CB00CD7977 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		41CDC169226EFC3F00C5B7B5 /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
+		41CDC16B226F03CD00C5B7B5 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		41CDC16D226F079D00C5B7B5 /* LaunchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModelTests.swift; sourceTree = "<group>"; };
+		41CDC16F226F0C1500C5B7B5 /* GuideViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewModelTests.swift; sourceTree = "<group>"; };
+		41CDC171226F139000C5B7B5 /* WelcomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModelTests.swift; sourceTree = "<group>"; };
+		41CDC175226FEA4900C5B7B5 /* NotificationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,13 +597,19 @@
 			path = ResetPassword;
 			sourceTree = "<group>";
 		};
-		41780A4D226D880000F22B32 /* BoxueSignInViewModelTests */ = {
+		41780A4D226D880000F22B32 /* BoxueUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				41780A4E226D880000F22B32 /* BoxueSignInViewModelTests.swift */,
+				41780A4E226D880000F22B32 /* SignInViewModelTests.swift */,
 				41780A50226D880000F22B32 /* Info.plist */,
+				41CDC169226EFC3F00C5B7B5 /* CommonTests.swift */,
+				41CDC16B226F03CD00C5B7B5 /* MainViewModelTests.swift */,
+				41CDC16D226F079D00C5B7B5 /* LaunchViewModelTests.swift */,
+				41CDC16F226F0C1500C5B7B5 /* GuideViewModelTests.swift */,
+				41CDC171226F139000C5B7B5 /* WelcomeViewModelTests.swift */,
+				41CDC175226FEA4900C5B7B5 /* NotificationViewModelTests.swift */,
 			);
-			path = BoxueSignInViewModelTests;
+			path = BoxueUnitTests;
 			sourceTree = "<group>";
 		};
 		41C2FCAC2254BE7000CD7977 = {
@@ -603,7 +621,7 @@
 				41C2FCD02254BE8B00CD7977 /* Boxue_iOS */,
 				41C2FCE22254BE9300CD7977 /* BoxueUIKit */,
 				41C2FCF32254BE9C00CD7977 /* BoxueDataKit */,
-				41780A4D226D880000F22B32 /* BoxueSignInViewModelTests */,
+				41780A4D226D880000F22B32 /* BoxueUnitTests */,
 				41C2FCB62254BE7000CD7977 /* Products */,
 				41C2FCFF2254C5E000CD7977 /* Frameworks */,
 			);
@@ -950,7 +968,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41780A4F226D880000F22B32 /* BoxueSignInViewModelTests.swift in Sources */,
+				41CDC170226F0C1500C5B7B5 /* GuideViewModelTests.swift in Sources */,
+				41CDC172226F139000C5B7B5 /* WelcomeViewModelTests.swift in Sources */,
+				41CDC16C226F03CD00C5B7B5 /* MainViewModelTests.swift in Sources */,
+				41CDC16A226EFC3F00C5B7B5 /* CommonTests.swift in Sources */,
+				41780A4F226D880000F22B32 /* SignInViewModelTests.swift in Sources */,
+				41CDC176226FEA4900C5B7B5 /* NotificationViewModelTests.swift in Sources */,
+				41CDC16E226F079D00C5B7B5 /* LaunchViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
