@@ -7,7 +7,7 @@ xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 
 script:
     - carthage update --platform iOS
-    - xcodebuild -scheme Boxue -sdk iponesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.1' test
+    - xcodebuild -scheme Boxue -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.1' test
 
 notifications:
     email:
